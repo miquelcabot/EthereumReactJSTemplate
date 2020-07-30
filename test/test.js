@@ -41,7 +41,7 @@ describe('Certified eDelivery Contract', () => {
     assert.ok(deliveryContract.options.address);
   });
 
-  it("receiver can accept delivery", async function() {
+  it("message is correct", async function() {
     let message = await deliveryContract.methods.message().call();
     assert.equal(message, MESSAGE);
   });

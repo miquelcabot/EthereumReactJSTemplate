@@ -1,7 +1,7 @@
 {
   "name": "EthereumReactJSTemplate",
   "version": "1.0.0",
-  "description": "Plantilla per compilar i desplegar un Smart Contract desenvolupat amb Solidity a Ethereum, i accedir-hi mitjançant una aplicació desenvolupada amb una aplicació web amb interfície web ReactJS.",
+  "description": "Plantilla per compilar i desplegar un Smart Contract desenvolupat amb Solidity a Ethereum, i accedir-hi mitjançant una aplicació desenvolupada amb una aplicació web amb interfície web ReactJS. Es pot executar a NodeJS o Docker.",
   "homepage": "https://secomuib.github.io/EthereumReactJSTemplate/",
   "main": "start.js",
   "directories": {
@@ -26,7 +26,9 @@
   "keywords": [
     "ethereum",
     "solidity",
-    "blockchain"
+    "blockchain",
+    "nodejs",
+    "docker"
   ],
   "author": "Seguretat i comerç electrònic (SECOM)",
   "license": "MIT",

@@ -15,3 +15,24 @@
 ## Help
 * [Node.js](https://nodejs.org/dist/latest-v14.x/docs/api/)
 * [Solidity](https://docs.soliditylang.org/)
+
+## Truffle
+
+Install:
+```
+npm install -g truffle
+truffle version
+```
+* Initialize new and empty Ethereum project: `truffle init`
+* Create contract: `truffle create contract HelloWorld`
+* Create migration: `truffle create migration HelloWorld`
+* Compile: `truffle compile`
+
+Test:
+```
+truffle develop
+> migrate
+> HelloWorld
+> let inst
+> HelloWorld.deployed().then((instance) => { inst = instance; } );
+```

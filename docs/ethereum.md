@@ -35,4 +35,17 @@ truffle develop
 > HelloWorld
 > let inst
 > HelloWorld.deployed().then((instance) => { inst = instance; } );
+> inst.functionName("test", "parameter", 1);
 ```
+
+## Remix - Ethereum IDE
+
+[http://remix.ethereum.org/](http://remix.ethereum.org/)
+
+* Plugins:
+    * Solidity compiler
+    * Deploy & run transactions
+* Environments:
+    * JavaScript VM: sandbox blockchain in the browser
+    * Injected Web3: web3 provider like *Metamask*
+    

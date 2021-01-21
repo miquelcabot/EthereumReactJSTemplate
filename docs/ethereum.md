@@ -7,12 +7,13 @@
         * `solcjs`
 * [Truffle](https://www.npmjs.com/package/truffle)
     * `npm install -g truffle`
-* [Ganache](https://www.npmjs.com/package/ganache-cli) or old `testrpc`
+* [Ganache-cli](https://www.npmjs.com/package/ganache-cli) or old `testrpc`
     * `npm install -g ganache-cli`
         * `ganache-cli <options>`
 * [Visual Studio Code](https://code.visualstudio.com/)
     * [Solidity extension](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
     * [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+    * [Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
 
 ## Help
 * [Node.js](https://nodejs.org/dist/latest-v14.x/docs/api/)
@@ -23,6 +24,8 @@
 
 ## Links
 * [Ethereum.org](https://ethereum.org/en/)
+* [Eat the Blocks - Youtube channel](https://www.youtube.com/channel/UCZM8XQjNOyG2ElPpEUtNasA)
+* [Eat the Blocks - GitHub repository](https://github.com/jklepatch/eattheblocks)
 
 ## Truffle
 * Initialize new and empty Ethereum project: `truffle init`
@@ -73,3 +76,26 @@ npm install -g remixd
 * Environments:
     * JavaScript VM: sandbox blockchain in the browser
     * Injected Web3: web3 provider like *Metamask*
+
+## Ganache GUI
+[Download](https://www.trufflesuite.com/ganache) and install or execute:
+```
+git clone https://github.com/trufflesuite/ganache
+cd ganache/
+npm install
+npm start
+```
+
+Run *truffle*:
+```
+truffle develop
+```
+
+And configure in *Ganache GUI* the server port number of *truffle* (9545) and the *Mnemonic* wordds.
+
+Compile and deploy the smart contract:
+```
+truffle develop
+> compile
+> migrate
+```

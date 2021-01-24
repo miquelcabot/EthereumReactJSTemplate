@@ -21,6 +21,7 @@
 * [Truffle](https://www.trufflesuite.com/docs/truffle/overview)
 * [Ganache](https://www.trufflesuite.com/docs/ganache/overview)
 * [Remix](https://remix-ide.readthedocs.io/)
+* [Web3](https://web3js.readthedocs.io/)
 
 ## Links
 * [Ethereum.org](https://ethereum.org/en/)
@@ -99,3 +100,7 @@ truffle develop
 > compile
 > migrate
 ```
+
+## Web3
+
+(...)

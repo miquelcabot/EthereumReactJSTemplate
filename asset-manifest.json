@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/EthereumReactJSTemplate/static/js/main.68fd80a9.chunk.js",
-    "main.js.map": "/EthereumReactJSTemplate/static/js/main.68fd80a9.chunk.js.map",
+    "main.js": "/EthereumReactJSTemplate/static/js/main.32247a75.chunk.js",
+    "main.js.map": "/EthereumReactJSTemplate/static/js/main.32247a75.chunk.js.map",
     "runtime-main.js": "/EthereumReactJSTemplate/static/js/runtime-main.9f6dbd84.js",
     "runtime-main.js.map": "/EthereumReactJSTemplate/static/js/runtime-main.9f6dbd84.js.map",
-    "static/css/2.b0f08f59.chunk.css": "/EthereumReactJSTemplate/static/css/2.b0f08f59.chunk.css",
-    "static/js/2.0a542c74.chunk.js": "/EthereumReactJSTemplate/static/js/2.0a542c74.chunk.js",
-    "static/js/2.0a542c74.chunk.js.map": "/EthereumReactJSTemplate/static/js/2.0a542c74.chunk.js.map",
+    "static/css/2.21d1c51e.chunk.css": "/EthereumReactJSTemplate/static/css/2.21d1c51e.chunk.css",
+    "static/js/2.c5e4d125.chunk.js": "/EthereumReactJSTemplate/static/js/2.c5e4d125.chunk.js",
+    "static/js/2.c5e4d125.chunk.js.map": "/EthereumReactJSTemplate/static/js/2.c5e4d125.chunk.js.map",
     "index.html": "/EthereumReactJSTemplate/index.html",
-    "precache-manifest.ca2fcb01697034b3b0dd9062c066ae42.js": "/EthereumReactJSTemplate/precache-manifest.ca2fcb01697034b3b0dd9062c066ae42.js",
+    "precache-manifest.df69689c79301d9e28a1cfc8340c320f.js": "/EthereumReactJSTemplate/precache-manifest.df69689c79301d9e28a1cfc8340c320f.js",
     "service-worker.js": "/EthereumReactJSTemplate/service-worker.js",
-    "static/css/2.b0f08f59.chunk.css.map": "/EthereumReactJSTemplate/static/css/2.b0f08f59.chunk.css.map",
-    "static/js/2.0a542c74.chunk.js.LICENSE.txt": "/EthereumReactJSTemplate/static/js/2.0a542c74.chunk.js.LICENSE.txt",
+    "static/css/2.21d1c51e.chunk.css.map": "/EthereumReactJSTemplate/static/css/2.21d1c51e.chunk.css.map",
+    "static/js/2.c5e4d125.chunk.js.LICENSE.txt": "/EthereumReactJSTemplate/static/js/2.c5e4d125.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/EthereumReactJSTemplate/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.9f6dbd84.js",
-    "static/css/2.b0f08f59.chunk.css",
-    "static/js/2.0a542c74.chunk.js",
-    "static/js/main.68fd80a9.chunk.js"
+    "static/css/2.21d1c51e.chunk.css",
+    "static/js/2.c5e4d125.chunk.js",
+    "static/js/main.32247a75.chunk.js"
   ]
 }

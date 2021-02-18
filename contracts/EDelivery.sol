@@ -1,14 +1,15 @@
-pragma solidity ^0.4.25;
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.7.4;
 
 // Factory contract for eDelivery
 contract EDeliveryFactory {
-    mapping(address => address[]) public senderDeliveries;
-    mapping(address => address[]) public receiverDeliveries;
-    address[] public deliveries;
+    mapping(address => EDelivery[]) public senderDeliveries;
+    mapping(address => EDelivery[]) public receiverDeliveries;
+    EDelivery[] public deliveries;
 
-    function createDelivery(address[] _receivers, string _message) public payable {
-        address newDelivery = (new EDelivery)
-            .value(msg.value)(msg.sender, _receivers, _message);
+    function createDelivery(address[] memory _receivers, string memory _message) public payable {
+        EDelivery newDelivery = new EDelivery{value: msg.value}(msg.sender, _receivers, _message);
         deliveries.push(newDelivery);
         senderDeliveries[msg.sender].push(newDelivery);
         for (uint i = 0; i<_receivers.length; i++) {
@@ -16,7 +17,7 @@ contract EDeliveryFactory {
         }
     }
 
-    function getSenderDeliveries(address _sender) public view returns (address[]) {
+    function getSenderDeliveries(address _sender) public view returns (EDelivery[] memory) {
         return senderDeliveries[_sender];
     }
 
@@ -24,7 +25,7 @@ contract EDeliveryFactory {
         return senderDeliveries[_sender].length;
     }
 
-    function getReceiverDeliveries(address _receiver) public view returns (address[]) {
+    function getReceiverDeliveries(address _receiver) public view returns (EDelivery[] memory) {
         return receiverDeliveries[_receiver];
     }
 
@@ -32,7 +33,7 @@ contract EDeliveryFactory {
         return receiverDeliveries[_receiver].length;
     }
 
-    function getDeliveries() public view returns (address[]) {
+    function getDeliveries() public view returns (EDelivery[] memory) {
         return deliveries;
     }
 
@@ -51,7 +52,7 @@ contract EDelivery {
     string public message;
 
     // Constructor funcion to create the delivery
-    constructor (address _sender, address[] _receivers, string _message) public payable {
+    constructor (address _sender, address[] memory _receivers, string memory _message) payable {
         sender = _sender;
         receivers = _receivers;
 

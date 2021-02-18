@@ -3,10 +3,8 @@ const ganache = require('ganache-cli');
 const Web3 = require('web3');
 const web3 = new Web3(ganache.provider());
 
-const compiledFactoryPath = '../src/ethereum/build/EDeliveryFactory.json';
-const compiledDeliveryPath = '../src/ethereum/build/EDelivery.json';
-const compiledFactory = require(compiledFactoryPath);
-const compiledDelivery = require(compiledDeliveryPath);
+const compiledFactory = require('../src/ethereum/build/EDeliveryFactory.json');
+const compiledDelivery = require('../src/ethereum/build/EDelivery.json');
 
 let factoryContract;
 let deliveryContract;
@@ -21,8 +19,8 @@ require('events').EventEmitter.defaultMaxListeners = 0;
 beforeEach(async () => {
   accounts = await web3.eth.getAccounts();
 
-  factoryContract = await new web3.eth.Contract(JSON.parse(compiledFactory.interface))
-    .deploy({ data: compiledFactory.bytecode, arguments: [] })
+  factoryContract = await new web3.eth.Contract(compiledFactory.abi)
+    .deploy({ data: compiledFactory.evm.bytecode.object, arguments: [] })
     .send({ from: accounts[0], gas: '6000000' });
 
   await factoryContract.methods
@@ -32,7 +30,7 @@ beforeEach(async () => {
   const addresses = await factoryContract.methods.getDeliveries().call();
   deliveryContractAddress = addresses[0];
 
-  deliveryContract = await new web3.eth.Contract(JSON.parse(compiledDelivery.interface), deliveryContractAddress);
+  deliveryContract = await new web3.eth.Contract(compiledDelivery.abi, deliveryContractAddress);
 });
 
 describe('Certified eDelivery Contract', () => {
